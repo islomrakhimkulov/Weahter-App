@@ -1,0 +1,90 @@
+*{
+  list-style: none;
+}
+ul, ol, li{
+  padding: 0;
+  margin: 0;
+}
+body{
+  background: linear-gradient(-15deg,#556CBA,#53CFAD);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.content{
+  padding: 40px 0;
+}
+
+.my-container{
+  max-width: 600px;
+  margin: auto;
+}
+
+.form *{
+  border-radius: 0 !important;
+  border: none;
+}
+.box{
+  background-color: rgba(33,54,69, 0.1);
+  padding: 15px;
+  border-radius: 6px;
+  min-height: 200px;
+}
+
+.box-title{
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+
+.box .condition{
+  font-size: 13px;
+}
+.today-img{
+  display: block;
+  margin: auto;
+  width: 120px;
+}
+
+.today-temp{
+  font-size: 26px;
+}
+.detail-info li{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 10px;
+  position: relative;
+}
+.detail-info li span,
+.detail-info li small{
+  background-color: #4E97A8;
+}
+.detail-info li::before{
+  position: absolute;
+  content: '';
+  left: 0;
+  bottom: 5px;
+  width: 100%;
+  height: 2px;
+  border-bottom: 2px dotted #fff;
+  z-index: -1;
+}
+.spinner{
+  width: 50px;
+  height: 50px;
+  border: 3px solid rgb(255 255 255 / 30%);
+  border-radius: 50%;
+  border-top-color: #ffffff;
+  animation: 1s spin ease-in-out infinite;
+  margin: auto;
+}
+
+@keyframes spin{
+  to{
+    transform: rotate(360deg);
+  }
+}
